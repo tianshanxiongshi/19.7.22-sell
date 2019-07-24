@@ -1,0 +1,236 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    color: #333;
+    font-weight: normal;
+    font-family: "Helvetica Neue,Tahoma,Arial";
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:hover{
+        outline: none;
+    }
+}
+
+/******时间控件样式******/
+.picker-wheel-wrapper .picker-wheel:nth-child(1) .wheel-item{
+  font-size: 15px !important;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 0px;  
+    height: 0px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #555;  
+}  
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}   
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.isFilter{
+  filter:blur(2px);
+}
+.g_nav{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.g_hx{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 1px;
+  transform: scaleY(0.5);
+}
+
+.g_hx::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  border-top: 1px solid #CDCED3;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.paddingTop{
+    padding-top: 1.95rem;
+}
+
+@keyframes backOpacity{
+   0%   { opacity: 1 }
+   25%  { opacity: .5 }
+   50%  { opacity: 1 }
+   75%  { opacity: .5 }
+   100% { opacity: 1 }
+}
+
+.animation_opactiy{
+    animation: backOpacity 2s ease-in-out infinite;
+}
+
+
+.van-tabs__line{
+  background: #007AFF !important;
+  height: 6px !important;
+}
+.van-tab .van-ellipsis{
+   font-size:0.32rem;
+  color:#8E8E93;
+}
+.van-tab--active .van-ellipsis{
+  color: #007AFF !important;
+}
+
+
+/**
+数据加载css
+ */
+.van-loading{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  color: rgb(201, 201, 201);
+  vertical-align: middle;
+  z-index: 1000;
+}
+.van-loading__spinner--spinner i{
+  color: rgb(201, 201, 201);
+}
+
+
+.van-toast{
+  color:#FFFFFF;
+  border-radius: 0.28rem !important;
+  z-index: 1000000000 !important; 
+  div{
+    color:#FFFFFF;
+  }
+}
+
+.van-button__text {
+        color: #1989fa !important;
+    }
+
+.gh_div {
+  width: 100%;
+  height: 1px;
+  background: #CDCED3;
+  -webkit-transform: scale(1.0, 0.5);
+  transform: scale(1.0, 0.5);
+}
+
+
+
+.van-list__loading{
+  position: relative;
+}
+
+//.van-loading{
+//  position: absolute !important;
+//  margin-left: -50px !important;
+//  margin-top: 0;
+//}
+
+.g_finally{
+     i{ float: left;}
+     p{
+         float: left;
+         width: 100%;
+         height: 0.8rem;
+         line-height: 0.8rem;
+         text-align: center;
+         font-size: 0.24rem;
+         color:#cdced3;
+        
+     }
+} 
+
